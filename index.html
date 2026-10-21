@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allinium Fabrication | Industrial & Commercial Fabrication in Moratuwa</title>
+  <meta name="description" content="Allinium Fabrication provides industrial and commercial fabrication and construction services in Moratuwa, Sri Lanka. Steel, aluminium, roofing, and building solutions. Call 070 752 2826 or email alliniumfabrication@gmail.com. Open 9AM–6PM." />
+  <meta property="og:title" content="Allinium Fabrication | Moratuwa" />
+  <meta property="og:description" content="Industrial & commercial fabrication. Steel, aluminium, roofing. Based in Moratuwa. Call 070 752 2826. Open 9AM–6PM." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_LK" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #1C3A5A;
+      --navy-dark: #12283D;
+      --orange: #D97B29;
+      --orange-dark: #B8621C;
+      --steel: #F4F6F8;
+      --charcoal: #2E2E2E;
+      --grey: #6B7280;
+      --white: #FFFFFF;
+      --radius: 10px;
+      --max: 1140px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      color: var(--charcoal);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, .brand-name {
+      font-family: "Barlow Condensed", "Inter", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      line-height: 1.1;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(28, 58, 90, 0.97);
+      backdrop-filter: blur(6px);
+      color: var(--white);
+      border-bottom: 3px solid var(--orange);
+    }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      min-height: 68px; gap: 18px;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .brand-mark {
+      width: 38px; height: 38px; border-radius: 8px;
+      background: var(--orange); color: var(--navy-dark);
+      display: grid; place-items: center;
+      font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 1.25rem;
+    }
+    .brand-name { font-size: 1.35rem; font-weight: 700; color: var(--white); }
+    .brand-sub { font-size: 0.7rem; letter-spacing: 0.12em; color: #C9D6E3; text-transform: uppercase; }
+    nav.desktop-nav { display: flex; gap: 26px; align-items: center; }
+    nav.desktop-nav a { font-size: 0.9rem; font-weight: 500; color: #E6EDF3; }
+    nav.desktop-nav a:hover { color: var(--orange); }
+    .header-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--orange); color: var(--navy-dark);
+      font-weight: 600; font-size: 0.9rem;
+      padding: 10px 16px; border-radius: 8px;
+      white-space: nowrap;
+    }
+    .header-cta:hover { background: #E68A3A; }
+    .mobile-call {
+      display: none;
+      background: var(--orange); color: var(--navy-dark);
+      padding: 9px 14px; border-radius: 8px; font-weight: 700; font-size: 0.85rem;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      background:
+        linear-gradient(105deg, rgba(18,40,61,0.92) 0%, rgba(28,58,90,0.85) 55%, rgba(28,58,90,0.55) 100%),
+        url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+      color: var(--white);
+      padding: 86px 0 74px;
+    }
+    .hero-inner { max-width: 760px; }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--orange);
+      background: rgba(217,123,41,0.12);
+      border: 1px solid rgba(217,123,41,0.45);
+      padding: 6px 12px; border-radius: 999px; margin-bottom: 20px;
+    }
+    .hero h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); margin-bottom: 18px; }
+    .hero p { font-size: 1.08rem; color: #DDE6EF; max-width: 620px; margin-bottom: 28px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 13px 22px; border-radius: 8px; font-weight: 600; font-size: 0.95rem;
+      transition: 0.2s ease;
+    }
+    .btn-primary { background: var(--orange); color: var(--navy-dark); }
+    .btn-primary:hover { background: #E68A3A; transform: translateY(-1px); }
+    .btn-outline { border: 1.5px solid rgba(255,255,255,0.55); color: var(--white); }
+    .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
+    .hero-trust {
+      display: flex; flex-wrap: wrap; gap: 22px; margin-top: 34px;
+      font-size: 0.85rem; color: #C9D6E3;
+    }
+    .hero-trust span { display: inline-flex; align-items: center; gap: 7px; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--orange); flex-shrink: 0; }
+
+    /* Sections */
+    section { padding: 70px 0; }
+    .section-head { max-width: 660px; margin-bottom: 40px; }
+    .section-label {
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--orange); margin-bottom: 10px;
+    }
+    .section-head h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); color: var(--navy); margin-bottom: 12px; }
+    .section-head p { color: var(--grey); font-size: 1rem; }
+
+    /* Services */
+    .services { background: var(--steel); }
+    .service-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;
+    }
+    .service-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 26px 24px; border: 1px solid #E2E8ED;
+      box-shadow: 0 4px 14px rgba(18,40,61,0.04);
+    }
+    .service-icon {
+      width: 44px; height: 44px; border-radius: 9px;
+      background: rgba(217,123,41,0.12); color: var(--orange-dark);
+      display: grid; place-items: center; margin-bottom: 16px;
+      font-size: 1.15rem; font-weight: 700;
+    }
+    .service-card h3 { font-size: 1.18rem; color: var(--navy); margin-bottom: 8px; }
+    .service-card p { font-size: 0.92rem; color: var(--grey); }
+
+    /* Why choose us */
+    .why-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px;
+    }
+    .why-item {
+      border-left: 3px solid var(--orange);
+      padding: 4px 0 4px 18px;
+    }
+    .why-item h3 { font-size: 1.05rem; color: var(--navy); margin-bottom: 6px; }
+    .why-item p { font-size: 0.92rem; color: var(--grey); }
+
+    /* About */
+    .about { background: var(--navy); color: var(--white); }
+    .about-grid {
+      display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 44px; align-items: center;
+    }
+    .about h2 { color: var(--white); font-size: clamp(1.8rem, 3.4vw, 2.6rem); margin-bottom: 16px; }
+    .about p { color: #D5E0EA; font-size: 1rem; margin-bottom: 14px; }
+    .about-facts {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: var(--radius); padding: 24px;
+    }
+    .fact { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.12); }
+    .fact:last-child { border-bottom: none; }
+    .fact-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: #AFC3D6; margin-bottom: 3px; }
+    .fact-value { font-size: 0.98rem; font-weight: 600; color: var(--white); }
+
+    /* Contact */
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 34px;
+    }
+    .contact-card {
+      background: var(--steel); border-radius: var(--radius); padding: 28px 26px;
+      border: 1px solid #E2E8ED;
+    }
+    .contact-item { display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid #E2E8ED; }
+    .contact-item:last-child { border-bottom: none; }
+    .contact-icon {
+      width: 38px; height: 38px; border-radius: 8px; flex-shrink: 0;
+      background: var(--navy); color: var(--white);
+      display: grid; place-items: center; font-size: 0.9rem;
+    }
+    .contact-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--grey); margin-bottom: 2px; }
+    .contact-value { font-size: 0.98rem; font-weight: 600; color: var(--navy); }
+    .contact-value a:hover { color: var(--orange-dark); }
+    .contact-note { font-size: 0.82rem; color: var(--grey); margin-top: 14px; }
+    .map-placeholder {
+      border-radius: var(--radius); overflow: hidden; min-height: 280px;
+      background:
+        linear-gradient(rgba(28,58,90,0.82), rgba(28,58,90,0.82)),
+        repeating-linear-gradient(45deg, #35526D 0 10px, #2A465E 10px 20px);
+      display: grid; place-items: center; text-align: center; color: #D5E0EA; padding: 28px;
+    }
+    .map-placeholder strong { display: block; font-family: "Barlow Condensed", sans-serif; font-size: 1.4rem; color: var(--white); margin-bottom: 6px; }
+    .map-placeholder span { font-size: 0.85rem; }
+
+    /* Footer */
+    footer { background: var(--navy-dark); color: #C9D6E3; padding: 48px 0 26px; }
+    .footer-grid {
+      display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 30px; margin-bottom: 34px;
+    }
+    .footer-brand .brand-name { font-size: 1.5rem; margin-bottom: 8px; }
+    .footer-brand p { font-size: 0.88rem; max-width: 320px; color: #AFC3D6; }
+    footer h4 { color: var(--white); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 14px; }
+    footer ul { list-style: none; }
+    footer li { margin-bottom: 9px; font-size: 0.88rem; }
+    footer a:hover { color: var(--orange); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12); padding-top: 20px;
+      display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;
+      font-size: 0.8rem; color: #8FA6BC;
+    }
+
+    /* Floating WhatsApp */
+    .wa-float {
+      position: fixed; right: 20px; bottom: 22px; z-index: 80;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #25D366; color: var(--white);
+      display: grid; place-items: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      transition: transform 0.2s ease;
+    }
+    .wa-float:hover { transform: scale(1.06); }
+    .wa-float svg { width: 28px; height: 28px; fill: currentColor; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      nav.desktop-nav { display: none; }
+      .mobile-call { display: inline-flex; }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      section { padding: 52px 0; }
+      .hero { padding: 64px 0 56px; }
+      .hero-trust { gap: 14px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .header-cta { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .btn-primary:hover, .wa-float:hover { transform: none; }
+    }
+			/* Add this to your existing CSS */
+	.gallery-grid {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	  gap: 24px;
+	}
+
+	.gallery-item {
+	  margin: 0;
+	  border-radius: var(--radius);
+	  overflow: hidden;
+	  background: var(--steel);
+	  border: 1px solid #E2E8ED;
+	  box-shadow: 0 4px 14px rgba(18,40,61,0.04);
+	  transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.gallery-item:hover {
+	  transform: translateY(-4px);
+	  box-shadow: 0 8px 24px rgba(18,40,61,0.08);
+	}
+
+	.gallery-item img {
+	  width: 100%;
+	  height: 220px;
+	  object-fit: cover;
+	  display: block;
+	}
+
+	.gallery-item figcaption {
+	  padding: 14px 16px;
+	  font-size: 0.9rem;
+	  font-weight: 600;
+	  color: var(--navy);
+	  text-align: center;
+	  background: var(--white);
+	}
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Allinium Fabrication home">
+        <div class="brand-mark" aria-hidden="true">AF</div>
+        <div>
+          <div class="brand-name">Allinium</div>
+          <div class="brand-sub">Fabrication</div>
+        </div>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="tel:+94707522826">Call 070 752 2826</a>
+      <a class="mobile-call" href="tel:+94707522826">Call Now</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <span class="eyebrow">Moratuwa · Industrial & Commercial Fabrication</span>
+        <h1 id="hero-heading">Built Strong.<br />Finished Right.</h1>
+        <p>
+          Allinium Fabrication delivers industrial and commercial fabrication and construction services from Moratuwa — steel, aluminium, roofing, and building solutions for factories, warehouses, and commercial premises.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/94707522826" target="_blank" rel="noopener">Request a Quote on WhatsApp</a>
+          <a class="btn btn-outline" href="tel:+94707522826">Call 070 752 2826</a>
+        </div>
+        <div class="hero-trust">
+          <span><span class="dot"></span> Moratuwa-based workshop</span>
+          <span><span class="dot"></span> Industrial & commercial focus</span>
+          <span><span class="dot"></span> Open 9AM–6PM</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-label">What We Do</div>
+          <h2 id="services-heading">Fabrication & Construction Services</h2>
+          <p>We take on fabrication and building packages for industrial and commercial clients. Scope is confirmed in writing before work begins.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">01</div>
+            <h3>Structural Steel Fabrication</h3>
+            <p>Steel frames, supports, staircases, handrails, and structural work for industrial and commercial buildings.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">02</div>
+            <h3>Aluminium Fabrication</h3>
+            <p>Aluminium windows, doors, partitions, and related fabrication for commercial fit-outs and building envelopes.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">03</div>
+            <h3>Roofing & Cladding</h3>
+            <p>Industrial roofing, roof repairs, cladding, and weatherproofing work for factories and warehouses.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">04</div>
+            <h3>Industrial Building Solutions</h3>
+            <p>Fabrication packages for industrial and commercial building projects, from workshop fabrication to site installation.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">05</div>
+            <h3>Repairs & Maintenance Fabrication</h3>
+            <p>Breakdown fabrication, replacement parts, and on-site repair work for facility managers and maintenance teams.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">06</div>
+            <h3>Custom Metalwork</h3>
+            <p>Gates, grills, canopies, and bespoke metalwork for commercial premises, built to the required specification.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- Place this section between your "Services" and "Why Choose Us" sections -->
+<section id="gallery" aria-labelledby="gallery-heading">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-label">Our Work</div>
+      <h2 id="gallery-heading">Product Gallery</h2>
+      <p>A selection of our aluminium and glass fabrication work for commercial and residential spaces.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- 01. Corner Windows -->
+      <figure class="gallery-item">
+        <img src="./images/aluminium-glass-corner-windows-01.webp"
+             alt="Aluminium glass corner window installation overlooking a garden"
+             loading="lazy" width="600" height="400">
+        <figcaption>Aluminium Glass Corner Windows</figcaption>
+      </figure>
+
+      <!-- 02. Casement Window Frame -->
+      <figure class="gallery-item">
+        <img src="./images/aluminium-casement-window-frame-02.webp"
+             alt="Close-up of a white aluminium casement window frame with a city view"
+             loading="lazy" width="600" height="400">
+        <figcaption>Aluminium Casement Window Frame</figcaption>
+      </figure>
+
+      <!-- 03. Glass Partition -->
+      <figure class="gallery-item">
+        <img src="./images/glass-office-partition-black-frame-03.webp"
+             alt="Black-framed glass partition creating a meeting room in an open office"
+             loading="lazy" width="600" height="400">
+        <figcaption>Glass Office Partition</figcaption>
+      </figure>
+
+      <!-- 04. Shower Cubicle -->
+      <figure class="gallery-item">
+        <img src="./images/glass-shower-cubicle-chrome-04.webp"
+             alt="Curved glass shower cubicle with chrome trim in a modern bathroom"
+             loading="lazy" width="600" height="400">
+        <figcaption>Curved Glass Shower Cubicle</figcaption>
+      </figure>
+
+      <!-- 05. Tilt & Turn Window -->
+      <figure class="gallery-item">
+        <img src="./images/aluminium-tilt-turn-window-05.webp"
+             alt="Black aluminium tilt and turn window in a living room"
+             loading="lazy" width="600" height="400">
+        <figcaption>Aluminium Tilt & Turn Window</figcaption>
+      </figure>
+
+      <!-- 06. Sliding Door -->
+      <figure class="gallery-item">
+        <img src="./images/aluminium-sliding-door-patio-06.webp"
+             alt="Large black aluminium sliding door opening onto a patio"
+             loading="lazy" width="600" height="400">
+        <figcaption>Aluminium Sliding Patio Door</figcaption>
+      </figure>
+
+      <!-- 07. Sliding Folding Door -->
+      <figure class="gallery-item">
+        <img src="./images/aluminium-sliding-folding-door-07.webp"
+             alt="Multi-panel aluminium sliding folding doors opening to an interior space"
+             loading="lazy" width="600" height="400">
+        <figcaption>Aluminium Sliding Folding Doors</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-label">Why Allinium</div>
+          <h2 id="why-heading">Straight Work. Clear Communication.</h2>
+          <p>No invented certifications, no exaggerated claims — just the practical strengths that matter on a fabrication job.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-item">
+            <h3>Owner-Level Accountability</h3>
+            <p>You deal directly with the people responsible for the work. Decisions are made quickly, and the finish is personally checked.</p>
+          </div>
+          <div class="why-item">
+            <h3>Industrial & Commercial Focus</h3>
+            <p>Our work is geared towards factories, warehouses, and commercial premises — environments where durability and uptime matter.</p>
+          </div>
+          <div class="why-item">
+            <h3>Moratuwa Workshop Location</h3>
+            <p>Based on Kadalana Road, Moratuwa, with access to the wider Colombo–Panadura industrial corridor.</p>
+          </div>
+          <div class="why-item">
+            <h3>Scope Confirmed Before Work</h3>
+            <p>We agree the scope, materials, and finish in writing. No surprise additions halfway through the job.</p>
+          </div>
+          <div class="why-item">
+            <h3>Repair & Maintenance Capability</h3>
+            <p>We handle smaller breakdown and replacement work alongside larger fabrication packages — useful when production cannot wait.</p>
+          </div>
+          <div class="why-item">
+            <h3>Direct Enquiry Channel</h3>
+            <p>Phone and WhatsApp are answered directly. Send a drawing, a photo, or a description and we will respond with a clear next step.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <div>
+          <div class="section-label" style="color: #F0B27A;">About the Business</div>
+          <h2 id="about-heading">Moratuwa-Based. Industry-Focused.</h2>
+          <p>
+            Allinium Fabrication is a fabrication and construction business based at 19/3 Kadalana Road, Moratuwa. We specialise in industrial and commercial building solutions, with work spanning steel fabrication, aluminium fabrication, roofing, and related construction services.
+          </p>
+          <p>
+            Our customers are business owners, contractors, and facility managers who need fabrication work done properly and communicated clearly. We keep the process simple: understand the requirement, confirm the scope, fabricate to specification, and hand over a finish that does not need rework.
+          </p>
+          <p>
+            If you have a drawing, a photo, or a site requirement, send it through WhatsApp or call the number below. We will tell you honestly whether we can help and what it will take.
+          </p>
+        </div>
+        <aside class="about-facts" aria-label="Business details">
+          <div class="fact">
+            <div class="fact-label">Company</div>
+            <div class="fact-value">Allinium Fabrication</div>
+          </div>
+          <div class="fact">
+            <div class="fact-label">Specialisation</div>
+            <div class="fact-value">Industrial & commercial fabrication and construction services</div>
+          </div>
+          <div class="fact">
+            <div class="fact-label">Location</div>
+            <div class="fact-value">19/3 Kadalana Road, Moratuwa</div>
+          </div>
+          <div class="fact">
+            <div class="fact-label">Contact</div>
+            <div class="fact-value"><a href="tel:+94707522826">070 752 2826</a></div>
+          </div>
+          <div class="fact">
+            <div class="fact-label">Email</div>
+            <div class="fact-value"><a href="mailto:alliniumfabrication@gmail.com">alliniumfabrication@gmail.com</a></div>
+          </div>
+          <div class="fact">
+            <div class="fact-label">Opening Hours</div>
+            <div class="fact-value">9:00 AM – 6:00 PM</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-label">Get in Touch</div>
+          <h2 id="contact-heading">Send Your Requirement</h2>
+          <p>Call, WhatsApp, email, or visit the workshop. For quotes, send a drawing, photo, or written description of the work.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">📞</div>
+              <div>
+                <div class="contact-label">Phone</div>
+                <div class="contact-value"><a href="tel:+94707522826">070 752 2826</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">💬</div>
+              <div>
+                <div class="contact-label">WhatsApp</div>
+                <div class="contact-value"><a href="https://wa.me/94707522826" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="contact-label">Address</div>
+                <div class="contact-value">19/3 Kadalana Road, Moratuwa, Sri Lanka</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">✉️</div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value"><a href="mailto:alliniumfabrication@gmail.com">alliniumfabrication@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">🕒</div>
+              <div>
+                <div class="contact-label">Opening Hours</div>
+                <div class="contact-value">9:00 AM – 6:00 PM</div>
+              </div>
+            </div>
+            <p class="contact-note">Workshop hours: 9:00 AM – 6:00 PM. Email enquiries: alliniumfabrication@gmail.com.</p>
+          </div>
+          <div class="map-placeholder" role="img" aria-label="Map placeholder for 19/3 Kadalana Road, Moratuwa">
+            <div>
+              <strong>Workshop Location</strong>
+              <span>19/3 Kadalana Road, Moratuwa<br /><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.8903249900854!2d79.8912331!3d6.7831998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae245121d47242b%3A0x14523c84833020!2s19%20Kadalana%20Rd%2C%20Moratuwa%2010400!5e0!3m2!1sen!2slk!4v1792581921618!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-name">Allinium Fabrication</div>
+          <p>Industrial and commercial fabrication and construction services from Moratuwa, Sri Lanka. Steel, aluminium, roofing, and building solutions.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why">Why Choose Us</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+94707522826">070 752 2826</a></li>
+            <li><a href="https://wa.me/94707522826" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:alliniumfabrication@gmail.com">alliniumfabrication@gmail.com</a></li>
+            <li>19/3 Kadalana Road, Moratuwa</li>
+            <li>Open 9:00 AM – 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Allinium Fabrication. All rights reserved.</span>
+        <span>Moratuwa, Sri Lanka</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a class="wa-float" href="https://wa.me/94707522826" target="_blank" rel="noopener" aria-label="Chat with Allinium Fabrication on WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16.04 4C9.96 4 5.04 8.92 5.04 15c0 2.16.62 4.18 1.7 5.9L5 28l7.3-1.9c1.64.9 3.5 1.4 5.74 1.4 6.08 0 11-4.92 11-11S22.12 4 16.04 4zm0 19.8c-1.96 0-3.78-.58-5.3-1.58l-.38-.24-4.34 1.12 1.16-4.22-.26-.4A9.72 9.72 0 016.24 15c0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.4 9.8-9.8 9.8zm5.38-7.34c-.3-.14-1.76-.86-2.04-.96-.28-.1-.48-.14-.68.14-.2.3-.78.96-.96 1.16-.18.2-.36.22-.66.08-.3-.14-1.26-.46-2.4-1.48-.88-.78-1.48-1.74-1.66-2.04-.18-.3-.02-.46.12-.6.14-.14.3-.36.46-.54.16-.18.2-.3.3-.5.1-.2.06-.36-.02-.5-.08-.14-.68-1.64-.94-2.24-.24-.58-.5-.5-.68-.5h-.58c-.2 0-.52.08-.8.38-.28.3-1.06 1.04-1.06 2.54s1.08 2.94 1.24 3.14c.14.2 2.14 3.26 5.18 4.56.72.32 1.28.5 1.72.64.72.24 1.38.2 1.9.12.58-.08 1.76-.72 2.02-1.42.24-.7.24-1.3.16-1.42-.06-.12-.26-.2-.56-.34z"/>
+    </svg>
+  </a>
+
+  <script>
+    document.querySelectorAll('nav a, .footer-grid a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
